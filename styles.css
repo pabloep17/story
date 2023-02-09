@@ -62,9 +62,25 @@ span, p {
 }
 
 input {
-    transition: 0.3236006s;
+    background-color: #0005;
     border-radius: 10px;
-    height: 60px;
+    border-color: #0000;
+    height: 35px;
+    font-family: SF-Regular;
+    color: white;
+    font-size: 125%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+input:focus {
+    border-color: black;
+}
+
+button {
+    transition: 0.3236006s;
+    border-radius: 22px;
+    height: 45px;
     width: auto;
     padding-left: 15px;
     padding-right: 15px;
@@ -97,7 +113,7 @@ input {
     border: 0;
 }
 
-.option:hover {
+.option:hover, button:hover {
     transition: 0.1618033s;
     transform: scale(1.2);
 }
