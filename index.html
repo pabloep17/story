@@ -17,6 +17,15 @@
         background-size: cover;
     }
 </style>
+<script>
+    function save() {
+        const d = document.getElementById("d").value
+        localStorage.setItem('dato', d)
+    }
+    function borrar() {
+        localStorage.removeItem('dato')
+    }
+</script>
 <body>
     <nav class="nav">
         <span style="padding-left: 10px;">Middle-Point</span>
@@ -25,6 +34,9 @@
         <h1 class="center">Middle-Point game</h1>
         <h2 class="center">A post-apocalyptic interactive game</h2>
         <h3 class="center">Please help with description</h3>
+        <input type="text" id="d">
+        <button onclick="save()">Guardar</button>
+        <button onclick="borrar()">Guardar</button>
         <div class="center">
             <a href="./introduction.html" class="option center">
                 Start!
