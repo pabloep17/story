@@ -21,7 +21,10 @@
     function save() {
         const d = document.getElementById("d")
         localStorage.setItem('dato', d.value)
-        d.value = ""
+        const show_data = document.getElementsByName('show_data')
+        show_data.forEach((data) => {
+            data.value = d.value
+        })
         console.table(localStorage)
     }
     function borrar() {
@@ -37,6 +40,7 @@
         <h1 class="center">Middle-Point game</h1>
         <h2 class="center">A post-apocalyptic interactive game</h2>
         <h3 class="center">Please help with description</h3>
+        <p name="show_data"></p>
         <input type="text" id="d">
         <button onclick="save()">Guardar</button>
         <button onclick="borrar()">Borrar</button>
