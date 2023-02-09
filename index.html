@@ -21,6 +21,8 @@
     function save() {
         const d = document.getElementById("d").value
         localStorage.setItem('dato', d)
+        d.value = ""
+        console.table(localStorage)
     }
     function borrar() {
         localStorage.removeItem('dato')
