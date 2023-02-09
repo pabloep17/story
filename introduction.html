@@ -7,10 +7,19 @@
     <title>Introduction</title>
     <link rel="stylesheet" href="./styles.css">
 </head>
-<body>
+<script>
+    function load() {
+        const show_data = document.getElementsByName('show_data')
+        show_data.forEach(data => {
+            data.innerText = localStorage.getItem("dato")
+        })
+    }
+</script>
+<body onload="load()">
     <nav class="nav">
         <span class="center max-width">Introduction</span>
     </nav>
+    <p name="show_data"></p>
     <div class="body">
         <div class="center max-width">
             <a href="./introduction.html" class="option center" style="margin-right: 10px;">Contar al tutor</a>
