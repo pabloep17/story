@@ -21,6 +21,7 @@
     function load() {
         localStorage.clear()
         localStorage.setItem("views", document.title)
+        location.reload()
     }
 </script>
 <body onload="load()">
@@ -34,7 +35,7 @@
         </div>
     </div>
     <div id="menu" class="menu_popover" style="display: none;"></div>
-    <script src="https://pabloep17.github.io/story/main.js"></script>
+    <script src="./main.js"></script>
 </body>
 
 </html>

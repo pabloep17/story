@@ -4,7 +4,7 @@ const see_menu = true
 
 const navbar = document.getElementById("nav")
 navbar.innerHTML = `
-    <span class="app_name">Middle-Point</span>
+    <span class="app_name"><a href="https://pabloep17.github.io/story/">Middle-Point</a></span>
     <span class="center max-width">${title != "Middle-Point" ? title : ""}</span>
     ${see_menu == true ? `<span class="menu" id="menu_view"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg></span>` : ""}    
 `
