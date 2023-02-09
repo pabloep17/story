@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Middle-Point</title>
     <link rel="stylesheet" href="styles.css">
+
 </head>
 <style>
     html {
@@ -17,9 +18,16 @@
         background-size: cover;
     }
 </style>
+<script>
+    function load() {
+        localStorage.clear()
+        localStorage.setItem("views", document.title)
+    }
+</script>
 <body onload="load()">
     <nav class="nav">
         <span style="padding-left: 10px;">Middle-Point</span>
+        <span class="menu" id="menu_view"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg></span>
     </nav>
     <div class="body">
         <h1 class="center">Middle-Point game</h1>
@@ -29,6 +37,8 @@
             <a href="./middle_point/index.html" class="option center">Start!</a>
         </div>
     </div>
+    <div id="menu" class="menu_popover" style="display: none;"></div>
+    <script src="./main.js"></script>
 </body>
 
 </html>
