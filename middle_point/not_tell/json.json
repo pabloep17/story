@@ -1,12 +1,12 @@
 [
     {
-        "nombre": "pablo",
-        "apellidos": "Eguilaz",
+        "nombre": "p1",
+        "apellidos": "p1",
         "edad": "18"
     },
     {
-        "nombre": "nacho",
-        "apellidos": "fdez",
+        "nombre": "p2",
+        "apellidos": "'p2'",
         "edad": "23"
     }
 ]
