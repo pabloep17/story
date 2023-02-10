@@ -14,6 +14,12 @@ if (title == "Middle-Point") {
     localStorage.setItem("views", document.title)
 }
 
+const body = document.getElementsByTagName("body")
+const div = document.createElement("div")
+div.setAttribute("class", "menu_popover")
+div.setAttribute("id", "menu")
+body[0].appendChild(div)
+
 const view = localStorage.getItem("views")
 
 localStorage.setItem("views", `${view != null ? view+"/" : "Middle-Point/" }${document.title}`)
@@ -28,13 +34,11 @@ const menu_function = async() =>  {
     const menu = document.getElementById('menu')
     if (!menu_view_state) {
         menu.style.display = "block"
-        console.log(localStorage)
         const viewArr = views.split("/")
-        console.table(viewArr)
         viewArr.forEach((e) => {
-            const span = document.createElement("p")
-            span.setAttribute("id", `view-${e}`)
-            menu.appendChild(span)
+            const p = document.createElement("p")
+            p.setAttribute("id", `view-${e}`)
+            p.appendChild(p)
             document.getElementById(`view-${e}`).innerHTML = e
         })
         menu_view_state = true
