@@ -18,6 +18,7 @@ const body = document.getElementsByTagName("body")
 const div = document.createElement("div")
 div.setAttribute("class", "menu_popover")
 div.setAttribute("id", "menu")
+div.setAttribute("style", "display: none")
 body[0].appendChild(div)
 
 const view = localStorage.getItem("views")
@@ -38,7 +39,7 @@ const menu_function = async() =>  {
         viewArr.forEach((e) => {
             const p = document.createElement("p")
             p.setAttribute("id", `view-${e}`)
-            p.appendChild(p)
+            menu.appendChild(p)
             document.getElementById(`view-${e}`).innerHTML = e
         })
         menu_view_state = true
