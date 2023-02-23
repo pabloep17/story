@@ -21,7 +21,7 @@ body[0].appendChild(nav)
 
 const navbar = document.getElementById("nav")
 navbar.innerHTML = `
-    <span style="position: absolute; left: 10px;"><a style="text-decoration: none; color: white" href="https://nafdez.github.io/middle-point-interactive/">Middle-Point</a></span>
+    <span style="position: absolute; left: 10px;"><a style="text-decoration: none; color: white" href="./../index.html">Middle-Point</a></span>
     <span style="display: flex;justify-content: center; align-items: center; width: 100%;">${title != "Middle-Point" ? title : ""}</span>
     ${see_menu == true ? `<span style="position: absolute; right: 10px; cursor: pointer;" id="menu_view"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M32 96v64h448V96H32zm0 128v64h448v-64H32zm0 128v64h448v-64H32z"></path></svg></span>` : ""}    
 `
