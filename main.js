@@ -2,7 +2,7 @@ const title = document.title
 
 const see_menu = true
 
-if (title == "Middle-Point") {
+if (title == "Middle-Point - A bunker story") {
     localStorage.clear()
     localStorage.setItem("views", document.title)
 }
