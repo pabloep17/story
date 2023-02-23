@@ -44,8 +44,7 @@ const menu_function = async() =>  {
         viewArr.forEach((e) => {
             const p = document.createElement("p")
             p.setAttribute("id", `view-${e}`)
-	    p.setAttribute("styel", "display: flex; align-items: center; 
-justify-content: flex-start;"
+	    p.setAttribute("style", "display: flex; align-items: center; justify-content: flex-start;")
             menu.appendChild(p)
             document.getElementById(`view-${e}`).innerHTML = e
         })
