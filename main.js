@@ -10,12 +10,12 @@ if (title == "Middle-Point - A bunker story") {
 const body = document.getElementsByTagName("body")
 
 const div = document.createElement("div")
-div.setAttribute("style", "position: absolute; top: 45px; right: 10px; background: #282828; width: 220px; border-radius: 10px; padding: 10px; color: #d6d3d0; display: none; margin: 0px;")
+div.setAttribute("style", "position: fixed; top: 45px; right: 10px; background: #282828; width: 220px; border-radius: 10px; padding: 10px; color: #d6d3d0; display: none; margin: 0px;")
 div.setAttribute("id", "menu")
 div.setAttribute("class", "text")
 body[0].appendChild(div)
 const nav = document.createElement("nav")
-nav.setAttribute("style", "width: 100%; height: 40px; display: flex; align-items: center; background-color: #282828; color: white; font-family: SF-Bold; font-size: larger; position: absolute; top: 0px;")
+nav.setAttribute("style", "width: 100%; height: 40px; display: flex; align-items: center; background-color: #282828; color: white; font-family: SF-Bold; font-size: larger; position: fixed; top: 0px;")
 nav.setAttribute("id", "nav")
 body[0].appendChild(nav)
 
