@@ -1,6 +1,6 @@
 const title = document.title
 
-const see_menu = true
+const see_menu = false
 
 if (title == "Middle-Point - A bunker story") {
     localStorage.clear()
